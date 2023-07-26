@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="script.js">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="heading">
+            <h1>Online Calculator</h1>
+        </div>
+        <div class="container">
+            <div class="Calculator">
+                <form action="">
+                    <div class="display">
+                        <input type="text"  name = "display">
+                    </div>
+                    <div>
+                        <!-- TOP BOTTOMS -->
+                        <input type="button" value="AC"onclick="display.value = ''" class="operator">
+                        <input type="button" value="DE" onclick="display.value= display.value.toString().slice(0, -1) "class = "operator">
+                        <input type="button" value="."onclick="display.value += '.'"class= "operator">
+                        <input type="button" value="/" onclick="display.value += '/'" class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="display.value += '7'">
+                        <input type="button" value="8"onclick="display.value += '8'">
+                        <input type="button" value="9"onclick="display.value += '9'">
+                        <input type="button" value="*"onclick="display.value += '*'">
+                        
+                    </div>
+                    <div>
+                        <input type="button" value="4"onclick="display.value += '4'">
+                        <input type="button" value="5"onclick="display.value += '5'">
+                        <input type="button" value="6"onclick="display.value += '6'">
+                        <input type="button" value="-"onclick="display.value += '-'">
+                        
+                    </div>
+                    <div>
+                        <input type="button" value="1"onclick="display.value += '1'">
+                        <input type="button" value="2"onclick="display.value += '2'">
+                        <input type="button" value="3"onclick="display.value += '3'">
+                        <input type="button" value="+"onclick="display.value += '+'">
+                    </div>
+
+                    <div>
+                        
+                        <input type="button" value="00"onclick = "display.value = '00'">
+                        <input type="button" value="0" onclick="display.value = '0'">
+                        <input type="button" value="=" onclick = "display.value = eval(display.value)" class="equal">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="Sunnycool" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    </body>
+</html>
